@@ -1,0 +1,25 @@
+egg troubleshooting
+
+Eggbot Extension not showing in Inkscape Extensions Submenu
+
+Make sure you select the correct directly. I was convinced I had it right the first time but I was wrong.
+C:\Program Files\Inkscape\share\extensions
+
+Eggbot Control Inkscape error
+
+Had to reopen Arduino IDE and reupload sketchup. I assumed it was only necessary to have Arduino open for the initial upload
+
+WRONG!
+
+Eggbot cannot find eggbot_scanwin32.py
+
+Tried manually changing port
+
+Tried copying updated version of eggbot.py.
+
+More debugging. Tried hardcoding VID PID for Arduino board in eggbot_scanwin32.py.
+
+Determined error occuring eggboy.testSerialPort line with serialPort.write( 'v\r')
+Error: WriteFile failed ([Error 6] The handle is invalid.)
+
+32bit related?
